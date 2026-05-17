@@ -165,7 +165,7 @@
                 <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-700/50">
                     <h3 class="text-white font-bold mb-4 uppercase tracking-widest text-xs border-b border-slate-700 pb-2">1. Định Vị Dự Án</h3>
                     <label class="admin-label">Tên Cụm Trường</label>
-                    <input type="text" id="cfgProjectName" class="admin-input" value="CỤM TRƯỜNG PHƯỜNG BA ĐÌNH" oninput="updateLiveCalc()">
+                    <input type="text" id="cfgProjectName" class="admin-input" value="CỤM TRƯỜNG PHƯỜNG..." oninput="updateLiveCalc()">
                     
                     <label class="admin-label">Chiết Khấu Thầu - Mảng Lõi (%)</label>
                     <input type="number" id="cfgMarginCore" class="admin-input" value="25" min="0" max="50" oninput="updateLiveCalc()">
@@ -237,7 +237,7 @@
                 
                 <h1 class="text-[52px] font-black text-white leading-[1.2] mb-6 uppercase tracking-tighter drop-shadow-xl">
                     GIẢI PHÁP CHUYỂN ĐỔI SỐ<br>GIÁO DỤC CÔNG NGHỆ MẦM NON<br>
-                    <span class="text-gradient-3d mt-2 block" id="display-project-name">DỰ ÁN CỤM TRƯỜNG PHƯỜNG BA ĐÌNH</span>
+                    <span class="text-gradient-3d mt-2 block" id="display-project-name">DỰ ÁN CỤM TRƯỜNG PHƯỜNG... </span>
                 </h1>
                 
                 <p class="text-[16px] text-slate-300 font-medium max-w-4xl mx-auto tracking-wide leading-relaxed border-l-4 border-orange-500 pl-6 bg-slate-800/30 py-4 rounded-r-lg backdrop-blur-sm">
@@ -751,7 +751,7 @@
             const marginCore = parseFloat(document.getElementById('cfgMarginCore').value) / 100 || 0;
             const marginHw = parseFloat(document.getElementById('cfgMarginHw').value) / 100 || 0;
             const connectorFee = parseFloat(document.getElementById('cfgConnectorFee').value) / 100 || 0;
-            const projectName = document.getElementById('cfgProjectName').value.trim() || "CỤM TRƯỜNG PHƯỜNG BA ĐÌNH";
+            const projectName = document.getElementById('cfgProjectName').value.trim() || "CỤM TRƯỜNG PHƯỜNG...";
 
             let totalPublic = 0;
             let totalNet = 0;
